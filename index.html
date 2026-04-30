@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chatbot especializado en vender proyectos de IA y Análisis de Datos">
+    <meta name="author" content="Analista de Datos IA">
+    <title>🤖 Chatbot de Ventas IA | Proyectos de Datos e Inteligencia Artificial</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chatbot de Ventas IA - Proyectos de Datos">
+    <meta property="og:description" content="Descubre cómo la IA puede transformar tu negocio. Explora proyectos de Machine Learning, Computer Vision, NLP y más.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=Chatbot+IA+Sales">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🤖 Chatbot de Ventas IA</h1>
+            <p>Tu asistente inteligente para proyectos de IA y Análisis de Datos</p>
+        </header>
+
+        <!-- Main Chat Wrapper -->
+        <div class="chat-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>📁 Categorías</h3>
+                    <button class="categoria-btn" onclick="explorarCategoria('prediccion_ML')">
+                        🤖 Predicción & ML
+                    </button>
+                    <button class="categoria-btn" onclick="explorarCategoria('computer_vision')">
+                        👁️ Computer Vision
+                    </button>
+                    <button class="categoria-btn" onclick="explorarCategoria('nlp_texto')">
+                        📝 NLP & Texto
+                    </button>
+                    <button class="categoria-btn" onclick="explorarCategoria('optimizacion')">
+                        ⚡ Optimización
+                    </button>
+                    <button class="categoria-btn" onclick="explorarCategoria('analytics_bi')">
+                        📊 Analytics & BI
+                    </button>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>⚡ Acciones Rápidas</h3>
+                    <button class="accion-btn" onclick="accionRapida('recomendar')">
+                        💡 Dame una recomendación
+                    </button>
+                    <button class="accion-btn" onclick="accionRapida('roi')">
+                        💰 Info sobre ROI
+                    </button>
+                    <button class="accion-btn" onclick="accionRapida('ayuda')">
+                        ❓ Ayuda
+                    </button>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>📊 Estadísticas</h3>
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; font-size: 0.9rem;">
+                        <div style="margin-bottom: 8px;">
+                            <strong>15+</strong> Proyectos
+                        </div>
+                        <div style="margin-bottom: 8px;">
+                            <strong>5</strong> Categorías
+                        </div>
+                        <div>
+                            <strong>20+</strong> Industrias
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Chat Container -->
+            <main class="chat-container">
+                <div id="chat-messages">
+                    <!-- Los mensajes se agregarán aquí dinámicamente -->
+                </div>
+
+                <div class="input-area">
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Escribe tu mensaje aquí..."
+                        autocomplete="off"
+                    >
+                    <button class="send-btn" onclick="enviarMensaje()">
+                        Enviar 🚀
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🚀 Desarrollado con HTML, CSS y JavaScript | Powered by IA</p>
+            <p style="margin-top: 10px;">
+                <em>Descubre cómo la IA puede transformar tu negocio</em>
+            </p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">
+                Conecta conmigo en
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/catalogo.js"></script>
+    <script src="js/chatbot.js"></script>
+
+    <!-- Ejemplos de preguntas (opcional) -->
+    <script>
+        // Agregar algunos ejemplos sugeridos si lo deseas
+        const ejemplosPreguntas = [
+            "¿Qué proyectos tienes para retail?",
+            "Necesito optimizar mis rutas de entrega",
+            "Quiero predecir la demanda de productos",
+            "¿Cuánto puedo ahorrar con IA?",
+            "Dame opciones de computer vision"
+        ];
+
+        // Puedes usar estos ejemplos para crear botones de sugerencias si quieres
+    </script>
+</body>
+</html>
